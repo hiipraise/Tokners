@@ -1,0 +1,37 @@
+.toknercoming {
+  position: relative;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.toknercoming h5 {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-weight: bold;
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  @media (max-width: 475px) {
+    font-size: 24px;
+  }
+}
+
+.toknercoming p {
+  font-size: 16px;
+  opacity: 60%;
+  color: #ffffff;
+  letter-spacing: 0.1px;
+  margin-bottom: 20px;
+}
+
+button {
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  border: 2px solid #22a75d;
+  border-radius: 52px;
+  padding: 10px 30px;
+  background-color: transparent;
+}

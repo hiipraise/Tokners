@@ -1,0 +1,64 @@
+.quarterbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.quarter-year {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.quarter {
+  width: 44px;
+  height: 44px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 50%;
+  color: #0f1320;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot-year {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  margin-top: 15px;
+}
+
+.dot-year i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  /* background-color: #22a75d; */
+}
+
+.dot-year b {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.numberlist ol {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.numberlist ol li {
+  color: rgba(255, 255, 255, 70%);
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+  margin: 5px 0px;
+}
+
+.numberlist strong {
+  font-weight: bold;
+  font-size: 12px;
+  color: #22a75d;
+}

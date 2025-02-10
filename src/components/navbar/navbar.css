@@ -1,0 +1,69 @@
+nav {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  @media (max-width: 425.5px) {
+    padding: 15px;
+  }
+}
+
+nav .logo_ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav .logo_ul ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+nav .logo_ul ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+nav .logo_ul strong a {
+  font-weight: bold;
+  font-size: 22px;
+  color: #ffffff;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+}
+
+.log-btn {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  @media (max-width: 579px) {
+    display: none;
+  }
+}
+
+.sign-in-a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.menubar {
+  display: none;
+  @media (max-width: 579px) {
+    display: flex;
+    align-items: center;
+  }
+}

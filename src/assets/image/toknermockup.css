@@ -1,0 +1,13 @@
+.toknermockup-img {
+  width: 52vw;
+  /* height: 90vh; */
+  position: relative;
+  right: 0;
+  bottom: 0;
+  @media (max-width: 870px) {
+    width: 45vw;
+  }
+  @media (max-width: 700px) {
+    width: 78vw;
+  }
+}
