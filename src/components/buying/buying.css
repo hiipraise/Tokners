@@ -1,0 +1,22 @@
+.buying {
+  background-color: #171b29;
+  border-radius: 20px;
+}
+
+.buying small {
+  padding-top: 20px;
+  align-items: start;
+  font-size: 10px;
+  font-weight: 500;
+  opacity: 30%;
+  color: #ffffff;
+}
+
+.buying p {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+}

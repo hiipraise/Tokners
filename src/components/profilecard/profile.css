@@ -1,0 +1,36 @@
+.profiledetails {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px 40px 0px;
+  width: 150px;
+  border-radius: 25px;
+  background-color: #0d0b16;
+}
+
+.profiledetails div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: start;
+}
+
+.profiledetails b {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.profiledetails small {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 70%);
+}
+
+.profiledetails img {
+  position: relative;
+  z-index: 2;
+  /* width: 200px; */
+  /* width: 170px; */
+  height: 350px;
+}

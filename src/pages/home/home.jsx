@@ -2,12 +2,14 @@ import "./home.css";
 import Toknermockup from "../../assets/image/toknermockup";
 import BoxCard from "../../components/boxcard/boxcard";
 import BoxCard2 from "../../components/boxcard/boxcard(2)";
-import muitlcolor from "../../assets/image/muitlcolor.png";
 import QuarterReview from "../../components/quarterreview/quarterreview";
 import { toknerData } from "../../data/toknerData";
 import ToknerLogo from "../../assets/icon/toknerlogo";
 import { Link } from "react-router-dom";
 import { phaseData } from "../../data/toknerData";
+import PresaleBox from "../../components/presalebox/presalebox";
+import { toBuyData } from "../../data/toknerData";
+import Buying from "../../components/buying/buying";
 
 const Home = () => {
   return (
@@ -87,12 +89,35 @@ const Home = () => {
             <div className="holdingphoneimg"></div>
           </div>
           <div className="muitlcolor-boxcard">
-            <img className="muitlcolor" src={muitlcolor} alt="" />
             <div className="Presale-card">
               <b>Presale Details</b>
-              <div>{phaseData.lenth && phaseData.map()}</div>
+              <div className="phasedatabox">
+                {phaseData.length &&
+                  phaseData.map((product, index) => (
+                    <PresaleBox
+                      key={index}
+                      quarter={product.quarter}
+                      date={product.date}
+                      phase={product.phase}
+                      hardCap={product.hardCap}
+                      softCap={product.softCap}
+                      backgroundColor={product.backgroundColor}
+                      boxShadow={product.boxShadow}
+                    />
+                  ))}
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+      {/* */}
+      <div className="buy">
+        <b>How to buy</b>
+        <div>
+          {toBuyData.length &&
+            toBuyData.map((product, index) => (
+              <Buying key={index} text={product.text} count={product.count} />
+            ))}
         </div>
       </div>
     </div>

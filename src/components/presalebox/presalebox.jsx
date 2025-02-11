@@ -22,14 +22,14 @@ const PresaleBox = ({
       >
         {quarter}
       </p>
-      <div>
-        <p>{phase}</p>
-        <p>{date}</p>
+      <div className="phase-date">
+        <p className="phase">{phase}</p>
+        <p className="date">{date}</p>
       </div>
-      <div>
-        <p>{exchange}</p>
-        <p>{softCap}</p>
-        <p>{hardCap}</p>
+      <div className="bnb">
+        <p className="bnbexchange">{exchange}</p>
+        <p className="softcap"><span>Soft cap: </span>{softCap}</p>
+        <p className="hardcap"><span>Hard cap: </span>{hardCap}</p>
       </div>
     </div>
   );

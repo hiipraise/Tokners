@@ -1,6 +1,82 @@
 .phasecard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   background-color: #ffffff;
   border-radius: 25px;
-  padding: 40px;
+  padding: 80px;
+  text-align: center;
+  align-items: center;
   border: 1px solid #191b21;
+  @media (max-width: 425.5px) {
+    padding: 25px;
+  }
+}
+
+.phasecard .quarter {
+  width: 44px;
+  height: 44px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 50%;
+  color: #0f1320;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phase-date {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.phase {
+  font-size: 24px;
+  color: #191b21;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 14px;
+  color: #191b21;
+  font-weight: bold;
+  opacity: 80%;
+}
+
+.bnb {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bnbexchange {
+  font-size: 20px;
+  font-weight: bold;
+  color: #191b21;
+  opacity: 80%;
+}
+
+.softcap {
+  font-size: 16px;
+  color: #191b21;
+  font-weight: bold;
+}
+
+.hardcap {
+  font-size: 16px;
+  color: #191b21;
+  font-weight: bold;
+}
+
+.bnb span {
+  opacity: 80%;
+  font-size: 16px;
+  font-weight: lighter;
+  color: #191b21;
 }
