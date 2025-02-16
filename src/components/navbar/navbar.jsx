@@ -26,12 +26,12 @@ const NavBar = () => {
           <li>
             <Link to="/token">Tokens</Link>
           </li>
-          <li>
+          {/* <li>
             <a href="#">Connect Wallet</a>
           </li>
           <li>
             <a href="#">Lightpaper</a>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="log-btn">

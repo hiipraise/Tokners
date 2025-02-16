@@ -19,13 +19,13 @@ const Footer = () => {
             <Link to="/token">TOKENS</Link>
           </li>
           
-          <li>
+          {/* <li>
             <Link to="#">CONNECT WALLET</Link>
           </li>
           
           <li>
             <Link to="#">LIGHTPAPER</Link>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="footer-header">
