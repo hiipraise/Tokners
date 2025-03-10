@@ -23,9 +23,9 @@ const NavBar = () => {
           <li>
             <Link to="/team">Our Team</Link>{" "}
           </li>
-          <li>
+          {/* <li>
             <Link to="/token">Tokens</Link>
-          </li>
+          </li> */}
           {/* <li>
             <a href="#">Connect Wallet</a>
           </li>
