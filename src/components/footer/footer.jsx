@@ -46,7 +46,7 @@ const Footer = () => {
               <Reddit />
           </li>
         </ul>
-        <b>&copy;2021 Tokners. All rights reserved</b>
+        <b>&copy;2025 Tokners. All rights reserved</b>
       </div>
     </footer>
   );
