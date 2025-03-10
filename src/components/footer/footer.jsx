@@ -15,9 +15,9 @@ const Footer = () => {
             <Link to="/team">OUR TEAM</Link>
           </li>
           
-          <li>
+          {/* <li>
             <Link to="/token">TOKENS</Link>
-          </li>
+          </li> */}
           
           {/* <li>
             <Link to="#">CONNECT WALLET</Link>
