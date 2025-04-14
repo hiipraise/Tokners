@@ -10,117 +10,123 @@ import { phaseData } from "../../data/toknerData";
 import PresaleBox from "../../components/presalebox/presalebox";
 import { toBuyData } from "../../data/toknerData";
 import Buying from "../../components/buying/buying";
+import NavBar from "../../components/navbar/navbar";
 
 const Home = () => {
   return (
-    <div className="home_page">
-      <div className="heropage">
-        <div>
-          <small>Al Tokners we are</small>
-          <h2>Reimagining social media through the power of the blockchain.</h2>
-          <p>
-            We are creating social media 3.0 with influencers, celebrities and
-            creators being able to launch their own digital currency by simply
-            creating a profile with media content posted as Non fungible Tokens
-            that can be owned and traded on the Tknrs network
-          </p>
-          <a href="#">Learn More</a>
-        </div>
-        <div className="che">
-          <Toknermockup />
-        </div>
-      </div>
-      {/*  */}
-      <div className="boxmaincard">
-        <BoxCard />
-        <BoxCard2 />
-      </div>
-      {/*  */}
-      <div className="colorcombin-box">
-        <div className="maincolorcombine"></div>
-        <div className="combine-detail">
-          <h4>What makes us different?</h4>
-          <p>
-            There are several thousand celebrities and creators on twitter,
-            tiktok, Instagram and YouTube with followings in the millions who we
-            would be actively engaging before we go viral.
-            <br />
-            <br />
-            We would get them on our platform and they would see the opportunity
-            to create a fan driven digital economy where their digital content
-            can be traded as NFTs.
-          </p>
-        </div>
-      </div>
-      {/* */}
-      <div className="quarter-tokner-bg">
-        <div className="quarter-tokner">
-          <div className="quarter-review">
-            {toknerData.length &&
-              toknerData.map((quarterData, index) => (
-                <QuarterReview
-                  key={index}
-                  quarter={quarterData.quarter}
-                  year={quarterData.year}
-                  tasks={quarterData.tasks}
-                  backgroundColor={quarterData.backgroundColor}
-                  boxShadow={quarterData.boxShadow}
-                  dot={quarterData.backgroundColor}
-                />
-              ))}
+    <>
+      <NavBar />
+      <div className="home_page">
+        <div className="heropage">
+          <div>
+            <small>Al Tokners we are</small>
+            <h2>
+              Reimagining social media through the power of the blockchain.
+            </h2>
+            <p>
+              We are creating social media 3.0 with influencers, celebrities and
+              creators being able to launch their own digital currency by simply
+              creating a profile with media content posted as Non fungible
+              Tokens that can be owned and traded on the Tknrs network
+            </p>
+            <a href="#">Learn More</a>
           </div>
-          <div className="toknercoming-phone">
-            <div className="toknercoming">
-              <h5>
-                <ToknerLogo /> Tokner is coming
-              </h5>
-              <p>
-                <b>
-                  Cryptocurrency adoption is at less than 1% of the global world
-                  population with some countries and entities actively fighting
-                  against its mass adoption and the smartest developers and
-                  nerds holding the fort.
-                </b>
-              </p>
-              <Link to="/article">
-                <button className="readmore">Read More</button>
-              </Link>
+          <div className="che">
+            <Toknermockup />
+          </div>
+        </div>
+        {/*  */}
+        <div className="boxmaincard">
+          <BoxCard />
+          <BoxCard2 />
+        </div>
+        {/*  */}
+        <div className="colorcombin-box">
+          <div className="maincolorcombine"></div>
+          <div className="combine-detail">
+            <h4>What makes us different?</h4>
+            <p>
+              There are several thousand celebrities and creators on twitter,
+              tiktok, Instagram and YouTube with followings in the millions who
+              we would be actively engaging before we go viral.
+              <br />
+              <br />
+              We would get them on our platform and they would see the
+              opportunity to create a fan driven digital economy where their
+              digital content can be traded as NFTs.
+            </p>
+          </div>
+        </div>
+        {/* */}
+        <div className="quarter-tokner-bg">
+          <div className="quarter-tokner">
+            <div className="quarter-review">
+              {toknerData.length &&
+                toknerData.map((quarterData, index) => (
+                  <QuarterReview
+                    key={index}
+                    quarter={quarterData.quarter}
+                    year={quarterData.year}
+                    tasks={quarterData.tasks}
+                    backgroundColor={quarterData.backgroundColor}
+                    boxShadow={quarterData.boxShadow}
+                    dot={quarterData.backgroundColor}
+                  />
+                ))}
             </div>
-            <div className="holdingphoneimg"></div>
-          </div>
-          <div className="muitlcolor-boxcard">
-            <div className="Presale-card">
-              <b>Presale Details</b>
-              <div className="phasedatabox">
-                {phaseData.length &&
-                  phaseData.map((product, index) => (
-                    <PresaleBox
-                      key={index}
-                      quarter={product.quarter}
-                      date={product.date}
-                      phase={product.phase}
-                      hardCap={product.hardCap}
-                      softCap={product.softCap}
-                      backgroundColor={product.backgroundColor}
-                      boxShadow={product.boxShadow}
-                    />
-                  ))}
+            <div className="toknercoming-phone">
+              <div className="toknercoming">
+                <h5>
+                  <ToknerLogo /> Tokner is coming
+                </h5>
+                <p>
+                  <b>
+                    Cryptocurrency adoption is at less than 1% of the global
+                    world population with some countries and entities actively
+                    fighting against its mass adoption and the smartest
+                    developers and nerds holding the fort.
+                  </b>
+                </p>
+                <Link to="/article">
+                  <button className="readmore">Read More</button>
+                </Link>
+              </div>
+              <div className="holdingphoneimg"></div>
+            </div>
+            <div className="muitlcolor-boxcard">
+              <div className="Presale-card">
+                <b>Presale Details</b>
+                <div className="phasedatabox">
+                  {phaseData.length &&
+                    phaseData.map((product, index) => (
+                      <PresaleBox
+                        key={index}
+                        quarter={product.quarter}
+                        date={product.date}
+                        phase={product.phase}
+                        hardCap={product.hardCap}
+                        softCap={product.softCap}
+                        backgroundColor={product.backgroundColor}
+                        boxShadow={product.boxShadow}
+                      />
+                    ))}
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      {/* */}
-      <div className="buy">
-        <b>How to buy</b>
-        <div>
-          {toBuyData.length &&
-            toBuyData.map((product, index) => (
-              <Buying key={index} text={product.text} count={product.count} />
-            ))}
+        {/* */}
+        <div className="buy">
+          <b>How to buy</b>
+          <div>
+            {toBuyData.length &&
+              toBuyData.map((product, index) => (
+                <Buying key={index} text={product.text} count={product.count} />
+              ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

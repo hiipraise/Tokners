@@ -14,11 +14,11 @@ const Footer = () => {
           <li>
             <Link to="/team">OUR TEAM</Link>
           </li>
-          
+
           {/* <li>
             <Link to="/token">TOKENS</Link>
           </li> */}
-          
+
           {/* <li>
             <Link to="#">CONNECT WALLET</Link>
           </li>
@@ -30,20 +30,23 @@ const Footer = () => {
       </div>
       <div className="footer-header">
         <strong>
-          <ToknerLogo /> Tokners
+          <Link to="/" className="footer-logo">
+            <ToknerLogo />
+            Tokners
+          </Link>
         </strong>
         <ul>
           <li>
-              <X />
+            <X />
           </li>
           <li>
-              <Telegram />
+            <Telegram />
           </li>
           <li>
-              <Instagram />
+            <Instagram />
           </li>
           <li>
-              <Reddit />
+            <Reddit />
           </li>
         </ul>
         <b>&copy;2025 Tokners. All rights reserved</b>

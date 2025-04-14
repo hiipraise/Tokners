@@ -17,6 +17,7 @@ footer {
   align-items: center;
   color: #ccc;
 }
+
 .nav-links ul li a {
   letter-spacing: 0.4px;
   text-underline-offset: 2px;
@@ -37,19 +38,24 @@ footer {
   padding: 80px 40px;
 }
 
-.footer-header strong {
-  color: #ffffff;
+.footer-logo {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 22px;
+  color: #ffffff;
   display: flex;
   gap: 5px;
   align-items: center;
+  letter-spacing: 0.2px;
+  text-decoration: none;
 }
 
 .footer-header ul {
   list-style: none;
   display: flex;
   gap: 20px;
+  li {
+    cursor: pointer;
+  }
 }
 
 .footer-header b {
