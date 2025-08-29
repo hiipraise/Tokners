@@ -70,6 +70,10 @@ nav .logo_ul strong a {
   font-weight: 500;
   font-size: 14px;
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: #fff;
+  }
 }
 
 .menubar {

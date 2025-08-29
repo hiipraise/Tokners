@@ -12,7 +12,7 @@
   align-items: center;
   padding: 40px;
   @media (max-width: 769px) {
-    margin-top:200px;
+    margin-top: 200px;
   }
 }
 
@@ -58,6 +58,10 @@
 .remember-forgot a {
   text-decoration: none;
   color: #007bff;
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: #007bff;
+  }
 }
 
 .auth-form button {
@@ -84,6 +88,10 @@
   cursor: pointer;
   text-decoration: none;
   font-weight: bold;
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: #007bff;
+  }
 }
 
 .auth-image {

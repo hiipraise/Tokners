@@ -13,7 +13,7 @@ const NavBar = () => {
     <nav>
       <div className="logo_ul">
         <strong>
-          <Link to="/">
+          <Link to="/" onClick={() => window.scroll(0, 0)}>
             {" "}
             <ToknerLogo />
             Tokners
@@ -21,7 +21,9 @@ const NavBar = () => {
         </strong>
         <ul className={menuOpen ? "ul open" : "ul"}>
           <li>
-            <Link to="/team">Our Team</Link>{" "}
+            <Link onClick={() => window.scroll(0, 0)} to="/team">
+              Our Team
+            </Link>{" "}
           </li>
           {/* <li>
             <Link to="/token">Tokens</Link>

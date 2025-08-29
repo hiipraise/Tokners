@@ -1,11 +1,14 @@
 import ToknerLogo from "../../assets/icon/toknerlogo";
+import Footer from "../../components/footer/footer";
 import NavBar from "../../components/navbar/navbar";
 import "./article.css";
 import { Link } from "react-router-dom";
+import BlurBg from "../../assets/image/blurbg";
 
 const Article = () => {
   return (
     <>
+      <BlurBg />
       <NavBar />
       <div className="toknercoming">
         <h5>
@@ -64,10 +67,11 @@ const Article = () => {
           people like you on the money, and you would own it because it would
           make the most sense in the world.
         </p>
-        <Link to="/">
+        <Link to="/" onClick={() => window.scroll(0, 0)}>
           <button>Back To Home</button>
         </Link>
       </div>
+      <Footer />
     </>
   );
 };

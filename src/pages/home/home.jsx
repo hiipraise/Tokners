@@ -11,36 +11,73 @@ import PresaleBox from "../../components/presalebox/presalebox";
 import { toBuyData } from "../../data/toknerData";
 import Buying from "../../components/buying/buying";
 import NavBar from "../../components/navbar/navbar";
+import { motion } from "framer-motion";
+import Footer from "../../components/footer/footer";
+import BlurBg from "../../assets/image/blurbg";
 
 const Home = () => {
   return (
     <>
+      <BlurBg />
       <NavBar />
       <div className="home_page">
-        <div className="heropage">
+        <motion.div
+          className="heropage"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
           <div>
-            <small>Al Tokners we are</small>
-            <h2>
+            <motion.small
+              initial={{ y: -10, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.3, delay: 0.2 }}
+            >
+              Al Tokners we are
+            </motion.small>
+            <motion.h2
+              initial={{ y: -20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.4, delay: 0.3 }}
+            >
               Reimagining social media through the power of the blockchain.
-            </h2>
-            <p>
+            </motion.h2>
+            <motion.p
+              initial={{ y: -15, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
               We are creating social media 3.0 with influencers, celebrities and
               creators being able to launch their own digital currency by simply
               creating a profile with media content posted as Non fungible
               Tokens that can be owned and traded on the Tknrs network
-            </p>
-            <a href="#">Learn More</a>
+            </motion.p>
+            <motion.a
+              href="#"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.3, delay: 0.6 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Learn More
+            </motion.a>
           </div>
-          <div className="che">
+          <motion.div
+            className="che"
+            initial={{ x: 50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+          >
             <Toknermockup />
-          </div>
-        </div>
-        {/*  */}
+          </motion.div>
+        </motion.div>
+
         <div className="boxmaincard">
           <BoxCard />
           <BoxCard2 />
         </div>
-        {/*  */}
+
         <div className="colorcombin-box">
           <div className="maincolorcombine"></div>
           <div className="combine-detail">
@@ -57,7 +94,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        {/* */}
+
         <div className="quarter-tokner-bg">
           <div className="quarter-tokner">
             <div className="quarter-review">
@@ -87,7 +124,7 @@ const Home = () => {
                     developers and nerds holding the fort.
                   </b>
                 </p>
-                <Link to="/article">
+                <Link to="/article" onClick={() => window.scroll(0, 0)}>
                   <button className="readmore">Read More</button>
                 </Link>
               </div>
@@ -115,7 +152,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* */}
+
         <div className="buy">
           <b>How to buy</b>
           <div>
@@ -126,6 +163,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

@@ -12,7 +12,9 @@ const Footer = () => {
       <div className="nav-links">
         <ul>
           <li>
-            <Link to="/team">OUR TEAM</Link>
+            <Link onClick={() => window.scroll(0, 0)} to="/team">
+              OUR TEAM
+            </Link>
           </li>
 
           {/* <li>
@@ -30,24 +32,19 @@ const Footer = () => {
       </div>
       <div className="footer-header">
         <strong>
-          <Link to="/" className="footer-logo">
+          <Link
+            onClick={() => window.scroll(0, 0)}
+            to="/"
+            className="footer-logo"
+          >
             <ToknerLogo />
             Tokners
           </Link>
         </strong>
         <ul>
-          <li>
-            <X />
-          </li>
-          <li>
-            <Telegram />
-          </li>
-          <li>
-            <Instagram />
-          </li>
-          <li>
-            <Reddit />
-          </li>
+          {[<X />, <Telegram />, <Instagram />, <Reddit />].map((item) => (
+            <li key={item}>{item}</li>
+          ))}
         </ul>
         <b>&copy;2025 Tokners. All rights reserved</b>
       </div>

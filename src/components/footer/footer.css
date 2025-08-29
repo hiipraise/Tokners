@@ -1,12 +1,12 @@
 footer {
   position: relative;
-  top: 100px;
+  top: 50px;
 }
 .nav-links {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0px 40px;
+  padding: 40px;
 }
 
 .nav-links ul {
@@ -35,7 +35,7 @@ footer {
   align-items: center;
   gap: 30px;
   flex-wrap: wrap;
-  padding: 80px 40px;
+  padding: 50px 40px;
 }
 
 .footer-logo {
