@@ -1,8 +1,33 @@
-# React + Vite
+# Tokners
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based frontend project.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Install dependencies:**
+    ```bash
+    npm install
+    ```
+2. **Start the development server:**
+    ```bash
+    npm start
+    ```
+
+## Project Structure
+
+- `src/` - Main source code for the React app
+- `public/` - Static assets and HTML template
+
+## Scripts
+
+- `npm start` - Run the app in development mode
+- `npm run build` - Build the app for production
+
+## Requirements
+
+- Node.js
+- npm
+
+## License
+
+This project is licensed under the MIT License.
