@@ -5,13 +5,13 @@ A React-based frontend project.
 ## Getting Started
 
 1. **Install dependencies:**
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 2. **Start the development server:**
-    ```bash
-    npm start
-    ```
+   ```bash
+   npm start
+   ```
 
 ## Project Structure
 
@@ -27,7 +27,3 @@ A React-based frontend project.
 
 - Node.js
 - npm
-
-## License
-
-This project is licensed under the MIT License.
